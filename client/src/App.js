@@ -6,8 +6,8 @@ import React, { useState, useEffect } from "react";
 import DayRecord from "./Components/DayRecord";
 import Form from "./Components/Form";
 
-const apiPath = (process.env.API_PATH || 'http://localhost:3001')
-console.log(apiPath)
+const apiPath = (process.env.REACT_APP_API_PATH || 'http://localhost:3001')
+console.log('apiPath', apiPath)
 function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
