@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "14.7.3"
+  },
   "name": "challenge",
   "version": "0.0.0",
   "private": true,
