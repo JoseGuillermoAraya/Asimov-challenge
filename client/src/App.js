@@ -7,7 +7,7 @@ import DayRecord from "./Components/DayRecord";
 import Form from "./Components/Form";
 
 const apiPath = (process.env.API_PATH || 'http://localhost:3001')
-
+console.log(apiPath)
 function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
