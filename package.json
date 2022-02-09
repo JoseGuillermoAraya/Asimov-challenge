@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "14.7.3"
+    "node": "14.x"
   },
   "name": "challenge",
   "version": "0.0.0",
