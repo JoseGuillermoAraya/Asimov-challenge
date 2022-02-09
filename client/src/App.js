@@ -6,7 +6,7 @@ import React, { useState, useEffect } from "react";
 import DayRecord from "./Components/DayRecord";
 import Form from "./Components/Form";
 
-const apiPath = (process.env.REACT_APP_API_PATH || 'http://localhost:3001')
+const apiPath = 'https://asimov-challenge.herokuapp.com'
 console.log('apiPath', apiPath)
 function App() {
   const [error, setError] = useState(null);

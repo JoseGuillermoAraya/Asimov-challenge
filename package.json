@@ -6,7 +6,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "set 'REACT_APP_API_PATH=https://asimov-challenge.herokuapp.com' && cd client && npm run build",
+    "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "server": "nodemon ./bin/www",
