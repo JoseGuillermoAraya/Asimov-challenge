@@ -6,6 +6,8 @@ import React, { useState, useEffect } from "react";
 import DayRecord from "./Components/DayRecord";
 import Form from "./Components/Form";
 
+const apiPath = (process.env.API_PATH || 'http://localhost:3001')
+
 function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -18,7 +20,7 @@ function App() {
   const [formEmail, setFormEmail] = useState("");
 
   const getRecord = () => {
-    fetch("http://localhost:3001/api/getHoursTaken")
+    fetch(`${apiPath}/api/getHoursTaken`)
       .then((res) => res.json())
       .then(
         (result) => {
@@ -53,7 +55,7 @@ function App() {
         email: formEmail,
       }),
     };
-    fetch("http://localhost:3001/api/addApointment", requestOptions)
+    fetch(`${apiPath}/api/addApointment`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
